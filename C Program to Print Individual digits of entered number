@@ -1,0 +1,43 @@
+
+/*
+ *  Author: Techyrick.com
+ */
+
+#include<stdio.h> 
+//#include 
+
+
+
+void main() {
+
+long number =0;
+int temp_var = 0;
+int i = 1;
+
+  
+
+//clrscr();
+
+    printf("C Program to Print Individual digits of a number :-");
+
+    printf("\n\n Enter a number (5 digits or more) : ");
+    scanf("%i", &number);
+
+    while(number >=1 ) {
+
+       temp_var = number%10; //get unit place digit
+    
+       printf("\n\n Digit at %d place => %d  ",i,temp_var);
+       number = number/10; //remove the units place 
+      
+       i++;
+
+
+}
+
+    
+//getch();
+
+
+}
+
